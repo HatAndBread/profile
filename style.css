@@ -3,6 +3,9 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
   background-attachment: #ffffff;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -14,6 +17,10 @@ a:hover {
   color: red;
 }
 
+nav {
+  text-align: center;
+}
+
 .list-inline > li {
   display: inline-block;
   padding: 0px 20px;
@@ -23,6 +30,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -34,8 +42,12 @@ a:hover {
   width: 260px;
 }
 
-img {
+.circle {
   border-radius: 50%;
+}
+
+.rounded {
+  border-radius: 8px;
 }
 
 @media (max-width: 720px) {
